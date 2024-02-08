@@ -25,7 +25,7 @@ This project aims to provide a scalable model to train YOLOv8 on a custom datase
 As the repository doesn’t contain all the folders for of the project neither the dataset(due to size limitation) , Here is my project structure for clarification.
 
 <center>
-<img src="./documentation/ProjectStructure.png" alt="structure" height="300"/>
+<img src="./documentation/ProjectStructure.png" alt="structure" height="500"/>
 </center>
 
 - `images` folder: contains the raw images before augmentation or annotations
@@ -61,21 +61,23 @@ Provide the path for `dataset.yaml` to load the model and initialize ClearML if 
 
 ### Comparison
 
-The nano and small models performed well despite running for only 30 epochs and low image size. The medium model performed better but was trained for only 5 epochs.
+The nano and small models performed well despite running for only 30 epochs and low image size. The medium model performed less better but was trained for only 5 epochs.
 
 #### Epoch Time
 <center>
-<img src="./documentation/epoch.png" alt="epoch" width="500"/>
+<img src="./documentation/epoch.png" alt="epoch" width="600"/>
 </center>
 The epoch time for the medium model is significantly longer than for the nano and small models.
 
 #### Parameters
-
+Comaprison of the Parameter size for each model
 <center>
-<img src="./documentation/paramter.png" alt="paramter" width="500"/>
+<img src="./documentation/paramter.png" alt="paramter" width="600"/>
 </center>
+
 #### mAP50
+Comparison for the models precision.
 <center>
-<img src="./documentation/image.png" alt="precision" width="500"/>
+<img src="./documentation/image.png" alt="precision" width="600"/>
 </center>
 
