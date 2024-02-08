@@ -80,3 +80,10 @@ Comparison for the models precision.
 <img src="./documentation/image.png" alt="precision" width="600"/>
 </center>
 
+#### Inference Time and speed
+- Nano Model : Speed: 0.6ms preprocess, 106.7ms inference, 0.0ms loss, 0.2ms postprocess per image
+- small Model : Speed: 0.9ms preprocess, 278.5ms inference, 0.0ms loss, 0.2ms postprocess per image
+- medium model : Speed: 0.7ms preprocess, 320.8ms inference, 0.0ms loss, 0.7ms postprocess per image
+
+
+
