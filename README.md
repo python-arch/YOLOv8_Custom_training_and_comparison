@@ -25,7 +25,7 @@ This project aims to provide a scalable model to train YOLOv8 on a custom datase
 As the repository doesn’t contain all the folders for of the project neither the dataset(due to size limitation) , Here is my project structure for clarification.
 
 <center>
-<img src="./documentation/ProjectStructure.png" alt="structure" width="500" height="200"/>
+<img src="./documentation/ProjectStructure.png" alt="structure" height="300"/>
 </center>
 
 - `images` folder: contains the raw images before augmentation or annotations
