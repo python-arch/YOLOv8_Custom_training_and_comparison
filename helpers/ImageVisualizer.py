@@ -49,7 +49,6 @@ def visualize_images_in_directory(image_dir, xml_dir):
             plt.title(f"Image: {image_file}")
             plt.show()    
 
-# Example usage:
 target_directory = '/Users/python/Desktop/Abdelrahman_ElSayed(python)_Task_7/augmented_dataset_voc'
 
 visualize_images_in_directory(target_directory, target_directory)
