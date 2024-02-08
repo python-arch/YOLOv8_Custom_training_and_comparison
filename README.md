@@ -9,7 +9,7 @@ This project aims to provide a scalable model to train YOLOv8 on a custom datase
 
 ## Procedures
 
-![FlowChart of the project](documentation/Flowchart (1).png)
+![FlowChart of the project](documentation/Flowchart.png)
 
 - **Base-dataset Collection:** Collect a small-sized dataset (e.g., 25 images) for generating the augmented training dataset.
 - **Annotation in Pascal VOC format:** Annotate the target objects (ones, half pounds) in the collected dataset.
