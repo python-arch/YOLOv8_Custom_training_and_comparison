@@ -1,0 +1,7 @@
+names:
+- half
+- one
+nc: 2
+path: ..
+train: /Users/python/Desktop/Abdelrahman_ElSayed(python)_Task_7/images
+val: /Users/python/Desktop/Abdelrahman_ElSayed(python)_Task_7/images
