@@ -1,4 +1,4 @@
-# YOLOv8 Custom Training Handbook
+# YOLOv8 Custom Training And Comparison
 
 This project aims to provide a scalable model to train YOLOv8 on a custom dataset. It also includes a comparison between different YOLOv8 models (nano, small, medium) using ClearML. The project can be broken down into the following main components/procedures:
 
@@ -9,7 +9,7 @@ This project aims to provide a scalable model to train YOLOv8 on a custom datase
 
 ## Procedures
 
-![FlowChart of the project](Flowchart.png)
+![FlowChart of the project](documentation/Flowchart.png)
 
 - **Base-dataset Collection:** Collect a small-sized dataset (e.g., 25 images) for generating the augmented training dataset.
 - **Annotation in Pascal VOC format:** Annotate the target objects (ones, half pounds) in the collected dataset.
@@ -21,6 +21,12 @@ This project aims to provide a scalable model to train YOLOv8 on a custom datase
 - **Test on inference data:** Use `custom_model_validation_prediction.ipynb` to test the models.
 
 ## Project Structure
+
+As the repository doesn’t contain all the folders for of the project neither the dataset(due to size limitation) , Here is my project structure for clarification.
+
+<center>
+<img src="./documentation/ProjectStructure.png" alt="structure" height="500"/>
+</center>
 
 - `images` folder: contains the raw images before augmentation or annotations
 - `annotated_dataset_voc` folder: contains images after annotations in Pascal VOC format
@@ -55,18 +61,29 @@ Provide the path for `dataset.yaml` to load the model and initialize ClearML if 
 
 ### Comparison
 
-The nano and small models performed well despite running for only 30 epochs and low image size. The medium model performed better but was trained for only 5 epochs.
+The nano and small models performed well despite running for only 30 epochs , batch size of only 8 and low image size. The medium model performed less better but was trained for only 5 epochs batch size of only 2 and also low image size.
 
 #### Epoch Time
-
-![Epoch Time Comparison](epoch.png)
-
-The epoch time for the medium model is significantly longer than for the nano and small models.
-
+<center>
+<img src="./documentation/epoch.png" alt="epoch" width="600"/>
+</center>
+The epoch time for the medium model is significantly longer than for the nano and small models. This is resonable due to the difference in complexity , number of layers and depth of each model
 #### Parameters
-
-![Parameters Comparison](paramter.png)
+Comaprison of the Parameter size for each model. There are siginifcant differences between each model where nano model come with less than 5 million , small model with less than 15 million and the medium model larger than 25 millions
+<center>
+<img src="./documentation/paramter.png" alt="paramter" width="600"/>
+</center>
 
 #### mAP50
+Comparison for the models precision.
+<center>
+<img src="./documentation/image.png" alt="precision" width="600"/>
+</center>
 
-![mAP50 Comparison](image.png)
+#### Inference Time and speed
+- Nano Model : Speed: 0.6ms preprocess, 106.7ms inference, 0.0ms loss, 0.2ms postprocess per image
+- small Model : Speed: 0.9ms preprocess, 278.5ms inference, 0.0ms loss, 0.2ms postprocess per image
+- medium model : Speed: 0.7ms preprocess, 320.8ms inference, 0.0ms loss, 0.7ms postprocess per image
+
+
+
