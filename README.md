@@ -59,7 +59,7 @@ The nano and small models performed well despite running for only 30 epochs and 
 
 #### Epoch Time
 
-![Epoch Time Comparison](documentation/epoch.png)
+<img src="./documentation/epoch.png" alt="epoch" width="300"/>
 
 The epoch time for the medium model is significantly longer than for the nano and small models.
 
