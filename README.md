@@ -61,16 +61,15 @@ Provide the path for `dataset.yaml` to load the model and initialize ClearML if 
 
 ### Comparison
 
-The nano and small models performed well despite running for only 30 epochs and low image size. The medium model performed less better but was trained for only 5 epochs.
+The nano and small models performed well despite running for only 30 epochs , batch size of only 8 and low image size. The medium model performed less better but was trained for only 5 epochs batch size of only 2 and also low image size.
 
 #### Epoch Time
 <center>
 <img src="./documentation/epoch.png" alt="epoch" width="600"/>
 </center>
-The epoch time for the medium model is significantly longer than for the nano and small models.
-
+The epoch time for the medium model is significantly longer than for the nano and small models. This is resonable due to the difference in complexity , number of layers and depth of each model
 #### Parameters
-Comaprison of the Parameter size for each model
+Comaprison of the Parameter size for each model. There are siginifcant differences between each model where nano model come with less than 5 million , small model with less than 15 million and the medium model larger than 25 millions
 <center>
 <img src="./documentation/paramter.png" alt="paramter" width="600"/>
 </center>
