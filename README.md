@@ -22,6 +22,12 @@ This project aims to provide a scalable model to train YOLOv8 on a custom datase
 
 ## Project Structure
 
+As the repository doesn’t contain all the folders for of the project neither the dataset(due to size limitation) , Here is my project structure for clarification.
+
+<center>
+<img src="./documentation/ProjectStructure.png" alt="structure" width="500"/>
+</center>
+
 - `images` folder: contains the raw images before augmentation or annotations
 - `annotated_dataset_voc` folder: contains images after annotations in Pascal VOC format
 - `augmented_dataset_voc` folder: contains images after augmentation for images and annotations
@@ -65,8 +71,11 @@ The epoch time for the medium model is significantly longer than for the nano an
 
 #### Parameters
 
-![Parameters Comparison](documentation/paramter.png)
-
+<center>
+<img src="./documentation/paramter.png" alt="paramter" width="500"/>
+</center>
 #### mAP50
+<center>
+<img src="./documentation/image.png" alt="precision" width="500"/>
+</center>
 
-![mAP50 Comparison](documentation/image.png)
