@@ -1,4 +1,4 @@
-# YOLOv8 Custom Training Handbook
+# YOLOv8 Custom Training And Comparison
 
 This project aims to provide a scalable model to train YOLOv8 on a custom dataset. It also includes a comparison between different YOLOv8 models (nano, small, medium) using ClearML. The project can be broken down into the following main components/procedures:
 
