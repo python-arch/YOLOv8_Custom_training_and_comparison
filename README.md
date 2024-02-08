@@ -65,8 +65,8 @@ The epoch time for the medium model is significantly longer than for the nano an
 
 #### Parameters
 
-![Parameters Comparison](paramter.png)
+![Parameters Comparison](documentation/paramter.png)
 
 #### mAP50
 
-![mAP50 Comparison](image.png)
+![mAP50 Comparison](documentation/image.png)
