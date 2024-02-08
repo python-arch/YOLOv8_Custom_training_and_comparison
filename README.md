@@ -58,9 +58,9 @@ Provide the path for `dataset.yaml` to load the model and initialize ClearML if 
 The nano and small models performed well despite running for only 30 epochs and low image size. The medium model performed better but was trained for only 5 epochs.
 
 #### Epoch Time
-<div style="text-align: center;">
+<center>
 <img src="./documentation/epoch.png" alt="epoch" width="500"/>
-</div>
+</center>
 The epoch time for the medium model is significantly longer than for the nano and small models.
 
 #### Parameters
