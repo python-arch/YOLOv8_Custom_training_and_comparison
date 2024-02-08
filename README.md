@@ -9,7 +9,7 @@ This project aims to provide a scalable model to train YOLOv8 on a custom datase
 
 ## Procedures
 
-![FlowChart of the project](./documentation/Flowchart (1).png)
+![FlowChart of the project](documentation/Flow)
 
 - **Base-dataset Collection:** Collect a small-sized dataset (e.g., 25 images) for generating the augmented training dataset.
 - **Annotation in Pascal VOC format:** Annotate the target objects (ones, half pounds) in the collected dataset.
@@ -59,7 +59,7 @@ The nano and small models performed well despite running for only 30 epochs and 
 
 #### Epoch Time
 
-![Epoch Time Comparison](epoch.png)
+![Epoch Time Comparison](documentation/epoch.png)
 
 The epoch time for the medium model is significantly longer than for the nano and small models.
 
